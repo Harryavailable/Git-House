@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页面</title>
+    <style>
+          *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+         body {
+        width: 100%;
+        height: 100%;
+        background-image: url(./txt/image/背景1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 130%;
+        font-size: #666;
+      }
+      nav{
+          width: 100%;
+          height: 80px;
+          border: 1px solid #999;
+          border-radius: 10px;
+          backdrop-filter: blur(8px);
+          box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+          border-top: 1px solid rgba(255,255,255,0.8);
+          border-left: 1px solid rgba(255,255,255,0.8);
+      }
+      .ul1{
+        height: 80px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+      }
+      .kehufankui{
+        width: 200px;
+        height: 60px;
+        border-radius: 5px;
+            backdrop-filter: blur(8px);
+            box-shadow: 10px 10px 20px rgba(5, 5, 5, 0.353);
+            border-top: 1px solid rgba(245,245,245,0.8);
+            border-left: 1px solid rgba(245,245,245,0.8);
+            text-align: center;
+            line-height: 60px;
+            font-size: 18px;
+            color: #333;
+            font-weight: 600;
+      }
+      li{
+        font-size: 16px;
+      }
+      .box{
+        width: 450px;
+            height: 200px;
+            margin:100px auto;
+            margin-bottom: 50px;
+            border: 1px solid #999;
+            border-radius: 10px;
+            backdrop-filter: blur(8px);
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+            border-top: 1px solid rgba(255,255,255,0.8);
+            border-left: 1px solid rgba(255,255,255,0.8);
+      }
+      .box h4{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        text-align: center;
+      }
+      p{
+        width: 50%;
+        height: 30px;
+        margin: 0 auto;
+        margin-top: 5px;
+        line-height: 30px;  
+        font-weight: 600;
+        font-size: 15px;
+        display: flex;
+        justify-content:flex-start;
+      }
+      .my_feedback{
+        width: 1200px;
+            margin:0 auto;
+            border: 1px solid #999;
+            border-radius: 10px;
+            backdrop-filter: blur(8px);
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+            border-top: 1px solid rgba(255,255,255,0.8);
+            border-left: 1px solid rgba(255,255,255,0.8);
+      }
+      #my_feedback_h5{
+        width: 100%;
+        height: 30px;
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+        line-height: 30px;
+      }
+      #message_arr_p{
+        width: 70%;
+        height: 30px;  
+         margin: 0;
+        margin-top: 5px;
+        line-height: 30px;  
+        font-size: 15px;
+      }
+      #userzhuijia_feedback_p{
+        width: 100%;
+        text-align: right;
+        font-weight: 400;
+      }
+      </style>
+</head>
+<script src="./txt/js/axios.js"></script>
+<body>
+<nav>
+    <ul class="ul1">
+        <li class="kehufankui">客户信息反馈系统</li>
+        <li id="firstpage">首页</li>
+        <li id="about_us">关于我们</li>
+        <li id="goto_passback">去反馈</li>
+        <li id = 'mymessage'>我的信息</li>
+        <li id = 'statistics'>用户反馈统计</li>
+        <li id="check_all_feedback">查看反馈</li>
+    </ul>
+</nav>
+<div class="box">
+<h4>亲爱的用户，欢迎你！</h4>
+<hr>
+<p><span>用户类型:&nbsp;&nbsp;&nbsp;&nbsp;</span> <span id="user_type"></span></p>
+<p><span>登录方式:&nbsp;&nbsp;&nbsp;&nbsp;</span> <span id="login_type"></span></p>
+<p><span>登录账号:&nbsp;&nbsp;&nbsp;&nbsp;</span> <span id="login_num"></span></p>
+
+</div>
+<div class="my_feedback">
+    <h5 id = 'my_feedback_h5'>我的反馈</h5>
+    <hr>
+<ul id = 'ul_feedback'>
+</ul>
+</div>
+<script src="./txt/js/main.js"></script>
+</body>
+</html>

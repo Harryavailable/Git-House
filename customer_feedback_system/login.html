@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册界面</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            background-image:url(./txt/image/背景1.jpg);
+            background-repeat: no-repeat;
+            background-size:100% 100vh;
+        }
+        *{
+            list-style: none;
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .box{
+            width: 500px;
+            height: 300px;
+            margin:200px auto;
+            border: 1px solid #999;
+            border-radius: 10px;
+            backdrop-filter: blur(8px);
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+            border-top: 1px solid rgba(255,255,255,0.8);
+            border-left: 1px solid rgba(255,255,255,0.8);
+        }
+        .box p {
+            font-size: 16px;
+            margin-top:70px;
+            margin-left:60px;
+        }
+        ul{
+            margin-left: 30px;
+            width: 100%;
+        }
+
+        li{
+            width:100%;
+            height:30px;
+           
+        }
+        li span{
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: right;
+            font-size: 15px;
+            padding-right: 5px;
+        }
+        li input{
+            width: 150px;
+            height: 30px;
+            font-size: 15px;
+            line-height: 30px;
+        }
+        li button{
+            margin-left: 10px;
+            width:50px;
+            height: 30px;
+            background-color:skyblue;
+            color: #fafafa;
+            font-size: 15px;
+            border: 1px solid transparent;
+        }
+        li h5{
+            display: inline-block;
+            margin-left: 5px;
+            width: 120px;
+            height: 30px;
+            color: #666;
+            font-size: 15px;
+            line-height: 30px;
+        }
+        .box1{
+            width: 100%;
+            height: 30px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        h3{
+            width: 80px;
+            height: 30px;
+            margin: 0 auto;
+            text-align: center;
+            background-color:orange;
+            border: 2px solid orange;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        h3 a{
+            font-size: 18px;
+           color: #fafafa;
+        }
+        h4{
+            width:150px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 15px;
+            color:rgb(150,150,150);
+            margin: 10px auto;
+        }
+        .login_type{
+            width:100%;
+            height:30px;
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+        }
+        .login_type span{
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            text-align: right;
+            font-size: 15px;
+            padding-right: 5px;
+        }
+        .login_type input{
+            width: 15px;
+            height: 15px;
+            font-size: 15px;
+            line-height: 30px;
+        }
+        .span1{
+            width:70px;
+            text-align: left;
+        }
+        .box h6{
+            margin-top: 20px;
+        margin-left: 85px;
+        color: #999;
+        font-weight: 600;
+        }
+    </style>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<body>
+    <div class="box">
+        <p><span>登录人员:</span> <span>客&nbsp;&nbsp;户&nbsp;&nbsp;：</span><input type="radio" name="login" checked="true" style="width:15px; height: 15px;" id="customer" >&nbsp;&nbsp;&nbsp;<span>客&nbsp;&nbsp;&nbsp;服&nbsp;&nbsp;&nbsp;：</span><input type="radio" name="login"  style="width:15px; height: 15px;" id="customer_server"></p>
+        <ul style="display:block" class="ul_customer">
+            <li class="login_type"><span>登录方式:</span><span class="span1">邮箱登录:</span><input type="radio" name="login_type" id="emaile_login" value="邮箱登录" checked="true"><span>手机号登录:</span><input type="radio" name="login_type" id="phone_login"></li>
+            <li style="display:block;margin-bottom:5px;" class="login_email"><span>邮箱登录:</span><input type="text"  id = "emaile_login_inp"></li>
+            <li style="display:none; margin-bottom:5px;"class="login_phone"><span>手机号码登录:</span><input type="text" id = "phone_login_inp"></li>
+            <li><span>密码:</span><input type="password" name="" id="password_kehu"></li>
+        </ul>
+        <ul style="display:none" class="ul_server">
+            <li style="margin-bottom:5px; margin-top: 15px;"><span>工号登录:</span><input type="text" id="kefu_login"></li>
+            <li><span>密码:</span><input type="password" name="" id="password_kefu"></li>
+        </ul>
+        <div class="box1">
+            <h3><a href="./register.html" id="zhuce">去注册</a></h3>
+            <h3 id ='user_login'><a href="javascript:;">登录</a></h3>
+        </div>
+         <h6 id="h6">忘记密码>></h6>
+    </div>
+    <script src="./txt/js/login.js"></script>
+</body>
+</html>

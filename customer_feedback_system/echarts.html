@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>统计图标</title>
+    <style>
+           body{
+            width: 100%;
+            height: 100%;
+            background-image:url(./txt/image/背景1.jpg);
+            background-repeat: no-repeat;
+            background-size:100% 100vh;
+        }
+        *{
+            list-style: none;
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .box{
+            width: 800px;
+            height: 450px;
+            margin:200px auto;
+            border: 1px solid #999;
+            border-radius: 10px;
+            backdrop-filter: blur(8px);
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+            border-top: 1px solid rgba(255,255,255,0.8);
+            border-left: 1px solid rgba(255,255,255,0.8);
+        }
+    </style>
+</head>
+<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.3.3/echarts.common.js"></script>
+<body>
+    <div class="box">
+
+    </div>
+    <script>
+        var mycharts = echarts.init(document.querySelector('.box'));
+        
+        option = {
+  title: {
+    text: '用户反馈情况统计图',
+    left: 'center'
+  },
+  tooltip: {
+    trigger: 'item',
+    formatter: '{a} <br/>{b} : {c} ({d}%)'
+  },
+  legend: {
+    left: 'center',
+    top: 'bottom',
+    data: [
+      '腾讯视频',
+      '微信',
+      'QQ',
+      '爱奇艺',
+      '王者荣耀',
+      '腾讯动漫'
+    ]
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      mark: { show: true },
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true }
+    }
+  },
+  series: [
+    {
+      name: '反馈种类',
+      type: 'pie',
+      radius: [20, 130],
+      center: ['23%', '40%'],
+      roseType: 'radius',
+      itemStyle: {
+        borderRadius: 5
+      },
+      label: {
+        show: false
+      },
+      emphasis: {
+        label: {
+          show: true
+        }
+      },
+      data: [
+        { value: 10, name: '外观' },
+        { value: 13, name: '功能' },
+        { value: 6, name: '质量' },
+        { value: 8, name: '效果' },
+        { value: 5, name: '维修' },
+        { value: 3, name: '其他' }
+      ]
+      
+    },
+    {
+      name: '产品名称',
+      type: 'pie',
+      radius: [20, 140],
+      center: ['70%', '40%'],
+      roseType: 'area',
+      itemStyle: {
+        borderRadius: 5
+      },
+      data: [
+        { value: 8, name: '腾讯视频', },
+        { value: 6, name: '微信' },
+        { value: 12, name: 'QQ' },
+        { value: 9, name: '爱奇艺' },
+        { value: 16, name: '王者荣耀' },
+        { value: 5, name: '腾讯动漫' }
+      ]
+    }
+  ]
+};
+mycharts.setOption(option);
+    </script>
+</body>
+</html>

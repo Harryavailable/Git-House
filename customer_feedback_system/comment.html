@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>客户反馈发布</title>
+</head>
+<link rel="stylesheet" href="./txt/css/main.css">
+<link rel="stylesheet" href="./txt/css/bootstrap.css">
+<script src="./txt/js/jQuery.min.js"></script>
+<script src="./txt/js/bootstrap.js"></script>
+<script src="./txt/js/axios.js"></script>
+<body>
+    <div class="box">
+<div class="box_left">
+  <div class="box_left_left">
+        <ul>
+            <li><h4>产品名称</h4></li>
+            <li id = 'productname'>腾讯视频</li>
+            <li id = 'productname'>微信</li>
+            <li id = 'productname'>QQ</li>
+            <li id = 'productname'>爱奇艺</li>
+            <li id = 'productname'>王者荣耀</li>
+            <li id = 'productname'>腾讯动漫</li>
+        </ul>
+    </div>
+    <div class="box_left_right">
+        <ul>
+            <li><h4>反馈类型</h4></li>
+            <li id="feedback">外观</li>
+            <li id="feedback">功能</li>
+            <li id="feedback">质量</li>
+            <li id="feedback">效果</li>
+            <li id="feedback">维修</li>
+            <li id="feedback">其他建议</li>
+        </ul>
+    </div>
+</div>
+<div class="box_right">
+    <div class="row" style="margin-top:5px;">
+        <div class="col-lg-4">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button" >产品名称</button>
+            </span>
+            <input type="text" class="form-control" id="chanpingname">
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-4">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">反馈类型</button>
+              </span>
+              <input type="text" class="form-control" id="fankuitype">
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-lg-2 search_button">
+            <button style="margin-top:2px;" id="search_feedback">反馈搜索</button>
+          </div>
+      </div><!-- /.row -->
+ <div class="box_textarea">
+    <p><span>详细信息</span></p>
+    <textarea name="feedback" id="feedback_text" cols="100" rows="16" style="font-size:18px; color:#333; font-weight: 500;"></textarea>
+    <br>
+    <br>
+   <p><button id = 'btn_feedback'>提交反馈</button> <button id = 'back_feedback' style="margin-left:20px;">返回</button></p> 
+   <div style="width:200px; text-align:center; margin: 0 300px;"><h4 id="feedback_h4" ></h4></div>
+</div>
+<div class="feedback_search" style = "display:none;">
+<h5 id="feedback_search_h5"></h5>
+<br>
+<p>
+  <button id="dateiled_feedback">查看详情</button>
+<button id = 'return_feedback'>返回反馈</button></p>
+
+</div>
+</div>
+</div>
+<script src="./txt/js/comment.js"></script>
+</body>
+</html>

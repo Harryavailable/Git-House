@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <style>
+          body{
+            width: 100%;
+            height: 100%;
+            background-image:url(./txt/image/背景1.jpg);
+            background-repeat: no-repeat;
+            background-size:100% 100vh;
+        }
+        *{
+            list-style: none;
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .box{
+            width: 500px;
+            height: 300px;
+            margin:200px auto;
+            border: 1px solid #999;
+            border-radius: 10px;
+            backdrop-filter: blur(8px);
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+            border-top: 1px solid rgba(255,255,255,0.8);
+            border-left: 1px solid rgba(255,255,255,0.8);
+        }
+        h4{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+        li{
+            padding: 0 30px;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            margin-top: 15px;
+            display: flex;
+            justify-content:space-around;
+            
+        }
+        p{
+            margin-top: 30px;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+        }
+        button{
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h4>开发小组成员</h4>
+        <hr>
+        <ul>
+            <li><span>组长:</span><h5>刘海瑞</h5><h5>41909050107</h5></li>
+            <li><span>组员:</span><h5>张国庆</h5><h5>41909050108</h5></li>
+            <li><span>组员:</span><h5>钱晨阳</h5><h5>41909050109</h5></li>
+            <li><span>组员:</span><h5>刘文发</h5><h5>41909050110</h5></li>
+        </ul>
+        <p><button id="btn_return">返回</button></p>
+    </div>
+    <script>
+          const btn_return  = document.getElementById('btn_return')
+          btn_return.addEventListener('click',function(){
+            window.location.href = './main.html'
+          })
+    </script>
+</body>
+</html>
