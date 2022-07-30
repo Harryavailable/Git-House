@@ -22,7 +22,7 @@ module.exports ={
         'css-loader'    //将css资源编译成commonjs模块放入js中
       ]
     },{
-      test:/\.less$/, ///处理.less结尾的文件
+      test:/\.less$/, ///处理.less结尾的文件。。
       use:[{
         loader:"style-loader"
       },{
