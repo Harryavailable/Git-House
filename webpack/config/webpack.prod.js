@@ -1,6 +1,10 @@
+//生产模式配置
+
 const path = require('path');
 const ESLintPlugin = require('eslint-webpack-plugin');//引入Eslint插件
 const HtmlWebpackPlugin = require('html-webpack-plugin');//引入HTML打包文件引入插件
+const MiniCssExtractPlugin = require("mini-css-extract-plugin"); //引入css样式处理
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");//引入css压缩插件
 module.exports ={
   //入口:文件从那个位置开始打包
   entry:'./src/main.js', //此处为相对路径
@@ -8,7 +12,7 @@ module.exports ={
   //输出：文件打包完成后输出到那个位置
   output:{
     //所有文件的输出路径
-    path:path.resolve(__dirname,'dist'), //此处为绝对路径
+    path:path.resolve(__dirname,'../dist'), //此处为绝对路径
     filename:'static/js/main.js',  //入口文件的打包文件名及文件位置
     clean:true,      //每次打包清空上次打包内容(若配置了服务器，则不能输出打包文件，此配置项可以不写)
   },
@@ -16,21 +20,32 @@ module.exports ={
   //加载器
   module:{
     rules:[{
-      test:/\.css$/, //正则表达式，监测以.css结尾的文件
+      test:/.s?.css$/, //正则表达式，监测以.css结尾的文件
       use:[    //use中内容从右向左执行
-        'style-loader',  //将js中的css通过创建style标签添加到html文件中生效
-        'css-loader'    //将css资源编译成commonjs模块放入js中
+        MiniCssExtractPlugin.loader, 
+        'css-loader',
+        {    //该对象是来处理css兼容性问题的
+          loader:"postcss-loader",
+          options:{
+            postcssOptions:{
+              plugins:[
+                "postcss-preset-env",//能解决大多样式兼容问题
+              ]
+            }
+          }
+        }   //将css资源编译成commonjs模块放入js中
       ]
     },{
-      test:/\.less$/, ///处理.less结尾的文件。。
+      test:/\.less$/, ///处理.less结尾的文件
       use:[{
-        loader:"style-loader"
+        loader:MiniCssExtractPlugin.loader
       },{
         loader:"css-loader"
       },{
         loader:"less-loader"
       }]
-    },{      //处理较小图片，将图片转化为base64 
+    },
+      {      //处理较小图片，将图片转化为base64 
              //图片转换为字符串，减少了对服务器的请求，但图片体积会稍微增大
       test:/\.(png|jpe?g|gif|webp|svg)$/,
       type:"asset",
@@ -63,24 +78,26 @@ module.exports ={
       }
     }]//loader的配置
   },
-
+optimization:{
+  minimizer:[
+    new CssMinimizerPlugin(),
+  ],
+},
   //插件
   plugins:[
     //eslint配置
     new ESLintPlugin({           //eslint是做语法监测的
-      context : path.resolve(__dirname,'src') //是监测src文件下的代码语法
+      context : path.resolve(__dirname,'../src') //是监测src文件下的代码语法
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname,'public/index.html'), 
+      template: path.resolve(__dirname,'../public/index.html'), 
       //以该路径下的html文件为模板创建新的html文件，新创建的文件结构和源文件一致，并且引入打包删除的资源
-    })
+    }),
+    new MiniCssExtractPlugin({
+      filename:"static/css/main.css",
+    }),
+      // new CssMinimizerPlugin(),//在这里也可以new文件压缩
   ], //plugins的配置
-
-devServer:{         //服务器配置项
-  host:'localhost', //启动服务器域名
-  port:'3000',     //服务器端口号
-  open:true,      //是否自动打卡浏览器
-},
   //模式
-  mode:'development'
+  mode:'production'
 }
