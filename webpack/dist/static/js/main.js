@@ -1,18 +1,2 @@
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-var __webpack_exports__ = {};
-
-;// CONCATENATED MODULE: ./src/js/other.js
-function others(num) {
-  num += 200;
-  console.log(num);
-  return num;
-}
-;// CONCATENATED MODULE: ./src/main.js
-
- // import './css/index.less'
-
-var p = document.querySelector('p');
-p.innerHTML = others(115);
-/******/ })()
-;
+"use strict";(self.webpackChunkwebpack_web=self.webpackChunkwebpack_web||[]).push([[179],{22899:(e,n,o)=>{o(81486),document.querySelector("p");document.getElementById("btn").onclick=function(){o.e(576).then(o.bind(o,75678)).then((function(e){console.log(e)}))},"serviceWorker"in navigator&&window.addEventListener("load",(function(){navigator.serviceWorker.register("/service-worker.js").then((function(e){console.log("SW registered: ",e)})).catch((function(e){console.log("SW registration failed: ",e)}))}))}},e=>{e.O(0,[486],(()=>{return n=22899,e(e.s=n);var n}));e.O()}]);
+//# sourceMappingURL=main.js.map
