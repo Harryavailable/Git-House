@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        list-style: none;
+      }
+      .box {
+        width: 600px;
+        height: 400px;
+        margin: 50px auto;
+      }
+      ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+      }
+      li {
+        position: relative;
+        width: 30%;
+        height: 45%;
+        border-radius: 10px;
+        border: 3px solid #ccc;
+      }
+      .circle {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border-radius: 9px;
+        background-color: #000;
+      }
+      .first {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .two1 {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+      }
+      .two2 {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+      }
+      .four1 {
+        position: absolute;
+        bottom: 8px;
+        left: 8px;
+      }
+      .four2 {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+      }
+      .six1 {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .six2 {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .change {
+        border-radius: 3px solid orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <ul>
+        <li id="first">
+          <span class="circle first"></span>
+        </li>
+        <li id="two">
+          <span class="circle two1"></span>
+          <span class="circle two2"></span>
+        </li>
+        <li id="third">
+          <span class="circle first"></span>
+          <span class="circle two1"></span>
+          <span class="circle two2"></span>
+        </li>
+        <li id="four">
+          <span class="circle two1"></span>
+          <span class="circle two2"></span>
+          <span class="circle four1"></span>
+          <span class="circle four2"></span>
+        </li>
+        <li id="five">
+          <span class="circle two1"></span>
+          <span class="circle two2"></span>
+          <span class="circle four1"></span>
+          <span class="circle four2"></span>
+          <span class="circle first"></span>
+        </li>
+        <li id="six">
+          <span class="circle two1"></span>
+          <span class="circle two2"></span>
+          <span class="circle four1"></span>
+          <span class="circle four2"></span>
+          <span class="circle six1"></span>
+          <span class="circle six2"></span>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const li = document.querySelectorAll("li");
+
+      setInterval(() => {
+        let num = Math.floor(Math.random() * 6);
+        for (let i = 0; i < li.length; i++) {
+          li[i].style.border = "3px solid #ccc";
+          if (num === i) {
+            li[i].style.border = "3px solid orange";
+          }
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
