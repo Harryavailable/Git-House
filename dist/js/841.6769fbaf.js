@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkshang"]=self["webpackChunkshang"]||[]).push([[841],{5841:function(n,u,t){t.r(u),t.d(u,{default:function(){return a}});var e=function(){var n=this;n._self._c;return n._m(0)},r=[function(){var n=this,u=n._self._c;return u("div",[u("h1",[n._v("我是团购订单内容")])])}],s={},l=s,c=t(1001),f=(0,c.Z)(l,e,r,!1,null,null,null),a=f.exports}}]);
