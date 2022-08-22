@@ -1,0 +1,161 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px solid #c80523;
+    padding-top: 18px;
+}
+
+.logo {
+    float: left;
+
+    width: 175px;
+    height: 65px;
+    background-image: url(../image/logo.png);
+    background-repeat: no-repeat;
+}
+
+.registerarea {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height:650px;
+    border: 1px solid #ccc;
+}
+
+.registerarea h3 {
+    height: 42px;
+    background-color: #efefef;
+    border-bottom: 1px solid #ccc;
+}
+
+h3 .txt1 {
+    float: left;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+h3 .txt2 {
+    padding-right: 20px;
+    float: right;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+h3 .txt2 a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 42px;
+    color: #c80523;
+}
+
+.reg_form {
+    width: 800px;
+    margin: 30px auto 0px;
+}
+
+.reg_form ul li {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.reg_form ul li span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+}
+
+.reg_form ul li label {
+    display: inline-table;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100px;
+    text-align: right;
+    line-height: 37px;
+}
+
+.reg_form ul li input {
+    padding-left: 10px;
+    width: 250px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+
+.reg_form p {
+    height: 30px;
+    margin: 15px 0 15px 20px;
+    padding-left: 75px;
+    text-align: left;
+}
+
+.reg_form p label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.reg_form p a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: red;
+
+}
+
+.reg_form button {
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    margin-left: 90px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgb(232, 57, 57);
+    border: none
+}
+
+.reg_form ul li .errow {
+    padding-left: 15px;
+    color: rgb(250, 50, 50);
+}
+
+.reg_form ul li .success {
+    padding-left: 15px;
+    color: rgb(31, 195, 39);
+}
+
+.reg_form ul .safe {
+    font-size: 13px;
+    margin-left: 180px;
+    color: rgb(172, 169, 169);
+}
+
+.reg_form ul .safe em {
+    padding: 0 12px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.safe .ruo {
+    background-color: #de1111;
+}
+
+.safe .zhong {
+    background-color: #40b86f;
+}
+
+.safe .qiang {
+    background-color: #f79100;
+}
+
+.footer1 {
+    height: 200px;
+}

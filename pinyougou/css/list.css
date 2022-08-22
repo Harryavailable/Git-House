@@ -1,0 +1,158 @@
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 18px;
+    height: 35px;
+    padding-left: 14px;
+    padding-top: 5px;
+    border-left: 1px solid #c81523;
+}
+
+.sk img {
+    width: 65px;
+    height: 30px;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sk_con {
+    float: left;
+    height: 47px;
+}
+
+.sk_con li {
+    float: left;
+}
+
+.sk_con ul li a {
+    display: block;
+    height: 47px;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 0px 20px;
+    line-height: 47px;
+}
+
+.sk_con ul li a:hover {
+    color: red;
+}
+
+.sk_con ul li:last-child a::after {
+    content: '\e797';
+    font-size: 14px;
+    font-family: 'iconfont';
+}
+
+.sk_con ul li .style_red {
+    color: red;
+}
+
+.sk_container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.sk_bd ul li {
+    float: left;
+    margin-top: 3px;
+    height: 460px;
+    width: 290px;
+    border: 1px solid #fff;
+}
+
+.sk_bd ul li img {
+    width: 288px;
+    height: 300px;
+}
+
+.sk_bd ul li .txt1 {
+    width: 288px;
+    height: 30px;
+    line-height: 15px;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.txt2 {
+    height: 30px;
+    line-height: 30px;
+}
+
+.txt2 .txt21 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #c81523;
+}
+
+.txt2 .txt22 {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(200, 200, 200);
+    text-decoration: line-through;
+}
+
+.txt3 {
+    width: 288px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    color: rgb(100, 100, 100);
+}
+
+.txt3 .txt31 {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 160px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    background-color: #dada;
+}
+
+.txt3 samp {
+    font-size: 15px;
+    color: #c81526;
+    border: 0px;
+}
+
+.btn {
+    width: 288px;
+    height: 75px;
+    margin-top: 5px;
+    background-color: #c81523;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+
+}
+
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}

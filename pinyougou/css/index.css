@@ -1,0 +1,379 @@
+.main {
+    width: 1200px;
+    margin: 10px auto;
+    height: 455px;
+    padding-left: 220px;
+}
+
+.foucus {
+    float: left;
+    width: 721px;
+    height: 455px;
+    background-color: pink;
+}
+
+.foucus ul li img {
+    width: 721px;
+    height: 455px;
+}
+
+.newflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.newflash .new {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.newflash .new .new_hd {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 15px;
+    border-bottom: 1px dashed #e4e4e4;
+}
+
+.newflash .new .new_hd .new_hd_fl {
+    float: left;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.newflash .new .new_hd .new_hd_fr {
+    float: right;
+    font-size: 12px;
+}
+
+.newflash .new .new_hd .new_hd_fr::after {
+    content: '\e64c';
+    font-family: 'iconfont';
+    font-size: 12px;
+
+}
+
+.newflash .new .new_bd {
+    padding: 5px 15px;
+}
+
+.newflash .new .new_bd ul li {
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.newflash .lifeservice {
+    height: 209px;
+    border-left: 1px solid #e4e4e4;
+
+}
+
+.newflash .lifeservice li {
+    float: left;
+    width: 62.25px;
+    height: 70px;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+}
+
+.newflash .lifeservice li h4 {
+    width: 24px;
+    height: 28px;
+    margin: 12px auto;
+    background-image: url(../image/icons.png);
+    background-position: -17px -15px;
+}
+
+.newflash .lifeservice .li2 {
+    position: relative;
+    float: left;
+    width: 62.25px;
+    height: 70px;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+}
+
+.newflash .lifeservice .li2 img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.newflash .lifeservice li p {
+    line-height: 12px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.newflash .bargain {
+    margin-top: 5px;
+    height: 35px;
+}
+
+.recom {
+    margin-top: 12px;
+    height: 163px;
+
+    background-color: rgb(235, 235, 235);
+}
+
+.recom .recom_hd {
+    float: left;
+    width: 205px;
+    height: 163px;
+    background-color: #5c5251;
+}
+
+.recom .recom_hd img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
+
+.recom .recom_hd p {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: '宋体';
+    color: #fff;
+    text-align: center;
+}
+
+.recom .recom_bd {
+    float: left;
+}
+
+.recom .recom_bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom .recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+.recom .recom_bd ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+.cainixihuan {
+    margin-top: 15px;
+    height: 365px;
+}
+
+.cainixihuan .top {
+    height: 35px;
+}
+
+.cainixihuan .top .like {
+    width: 110px;
+    height: 35px;
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.cainixihuan .top .chenge {
+    float: right;
+    width: 85px;
+    height: 35px;
+}
+
+.cainixihuan .top .chenge a {
+    font-style: 12px;
+    font-weight: 400;
+    color: rgb(40, 163, 239);
+}
+
+.cainixihuan .top .chenge a::after {
+    content: '\e620';
+    font-family: 'iconfont';
+    font-size: 12px;
+}
+
+.cainixihuan .bottom {
+    height: 316px;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.cainixihuan .bottom ul li {
+    height: 316px;
+    float: left;
+    border-right: 1px solid rgb(230, 230, 230);
+    width: 239px;
+}
+
+.cainixihuan .bottom ul li img {
+    width: 237px;
+    height: 190px;
+}
+
+.cainixihuan .bottom ul li h5 {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.cainixihuan .bottom ul li h3 {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(227, 48, 51);
+}
+
+.cainixihuan .bottom ul li:last-child {
+    border-right: 0px;
+}
+
+.floor .w {
+    margin-top: 20px;
+}
+
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-weight: 700;
+    font-size: 18px;
+    color: #c81623;
+}
+
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+.tab_list ul li a {
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+.box_bd .tab_content .tab_list_item>div {
+    float: left;
+}
+
+.box_bd .tab_content .tab_list_item .item1 {
+    width: 210px;
+    height: 361px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.box_bd .tab_content .tab_list_item .item1 ul {
+    padding-left: 12px;
+}
+
+.box_bd .tab_content .tab_list_item .item1 ul li {
+    float: left;
+    margin-right: 10px;
+    width: 85px;
+    height: 34px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 33px;
+    border-bottom: 1px solid #ccc;
+}
+
+.box_bd .tab_content .tab_list_item .item2 {
+    position: relative;
+    width: 329px;
+}
+
+.box_bd .tab_content .tab_list_item .item3 {
+
+    width: 220px;
+
+}
+
+.box_bd .tab_content .tab_list_item .item2 .left {
+    position: absolute;
+    left: 0px;
+    top: 48%;
+    margin-top: 16px;
+
+}
+
+.box_bd .tab_content .tab_list_item .item2 .right {
+    position: absolute;
+    right: 0px;
+    top: 48%;
+
+}
+
+.box_bd .tab_content .tab_list_item .item3 .item31 {
+    border-bottom: 1px solid #ccc;
+    display: block;
+}
+
+.box_bd .tab_content .tab_list_item .item4 {
+    width: 220px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.box_bd .tab_content .tab_list_item .item5 {
+    width: 220px;
+}
+
+.box_bd .tab_content .tab_list_item .item5 .item51 {
+    border-bottom: 1px solid #ccc;
+    display: block;
+}
+
+.jump {
+    position: fixed;
+    top: 150px;
+    width: 150px;
+    height: 250px;
+    background-color: #c81623;
+}
+
+
+.jump dl dd {
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+
+    border-bottom: 2px solid #fff;
+}
+
+.jump dl dd a {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.jump dl dd:last-child {
+    border-bottom: 0px solid #000;
+}
