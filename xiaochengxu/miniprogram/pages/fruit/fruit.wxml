@@ -1,0 +1,36 @@
+<view class="xpl"> 
+<scroll-view class = "nav_l " scroll-y="true">
+<ul>
+  <li bindtap="shucai" class="{{value===0?'checked':''}}"data-value="{{0}}">红富士</li>
+<li bindtap="shucai" class="{{value===1?'checked':''}}"data-value="{{1}}">贵妃芒</li>
+<li bindtap="shucai"class="{{value===2?'checked':''}}" data-value="{{2}}">椰子椰青</li>
+<li bindtap="shucai"class="{{value===3?'checked':''}}" data-value="{{3}}">莲雾</li>
+<li bindtap="shucai"class="{{value===4?'checked':''}}" data-value="{{4}}">黄柠檬</li>
+<li bindtap="shucai"class="{{value===5?'checked':''}}" data-value="{{5}}">脐橙</li>
+<li bindtap="shucai"class="{{value===6?'checked':''}}" data-value="{{6}}">海南香蕉</li>
+<li bindtap="shucai"class="{{value===7?'checked':''}}" data-value="{{7}}">百香果</li>
+<li bindtap="shucai"class="{{value===8?'checked':''}}" data-value="{{8}}">猕猴桃</li>
+<li bindtap="shucai"class="{{value===9?'checked':''}}" data-value="{{9}}">甜心柿</li>
+<li bindtap="shucai"class="{{value===10?'checked':''}}" data-value="{{10}}">蓝莓</li>
+<li bindtap="shucai"class="{{value===11?'checked':''}}" data-value="{{11}}">葡萄</li>
+<li bindtap="shucai"class="{{value===12?'checked':''}}" data-value="{{12}}">草莓</li>
+<li bindtap="shucai"class="{{value===13?'checked':''}}" data-value="{{13}}">荸荠</li>
+<li bindtap="shucai"class="{{value===14?'checked':''}}" data-value="{{14}}">石榴</li>
+<li bindtap="shucai"class="{{value===15?'checked':''}}" data-value="{{15}}">枇杷</li>
+<li bindtap="shucai"class="{{value===16?'checked':''}}" data-value="{{16}}">西柚</li>
+<li bindtap="shucai"class="{{value===17?'checked':''}}" data-value="{{17}}">山楂</li>
+<li bindtap="shucai"class="{{value===18?'checked':''}}" data-value="{{18}}">樱桃</li>
+<li bindtap="shucai"class="{{value===19?'checked':''}}" data-value="{{19}}">木瓜</li>
+</ul>
+</scroll-view>
+<view class="nav_r"> 
+<view class="name"><h4>{{fruit[value].name}}</h4></view>
+<view class="add"><text>价格/元:</text><h4>{{fruit[value].price}}</h4></view>
+<view class="add"><text>水果长度:</text> <h4 >{{fruit[value].size}}</h4></view>
+<view class="add"><text>生产商联系方式:</text> <h4>{{fruit[value].tel}}</h4></view>
+<view class="add"><text>产地:</text> <h4>{{fruit[value].address}}</h4></view>
+<view wx:for="{{fruit[value].picture}}"wx:for-item="item" class="img"><image  src="{{item}}"></image></view>
+<view class="js">农产品介绍</view>
+<view class="text"><h4>{{fruit[value].description}}</h4></view>
+</view>
+</view>

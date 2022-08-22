@@ -1,0 +1,67 @@
+<view class="user_info_wrap">
+<view class="user_img_wrap" wx:if="{{flage}}">
+ <image class="user_bg" src="{{pic}}"></image>
+ <view class="user_info">
+ <image class="user_icon" src="{{pic}}"></image>
+ <view calss="user_name">
+ <text class="user_name1">{{name}}</text>
+ </view>
+ </view>
+</view>
+<view class="my_logo" wx:if="{{!flage}}">
+  <view class="top_title">您还未授权登录</view>
+  <button bindtap="getuser" type="warn" >登录</button>
+</view>
+</view>
+<view class="banner-xx">
+    <view class="ban-t" bindtap="showgrzl">
+        <view class="ban-row">
+            <view class="ban-im">
+                <image src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/%E4%B8%AA%E4%BA%BA%E8%B5%84%E6%96%99%20(2).png?sign=dc9fc0db238b275cf701cc93e0651711&t=1653098147"></image>
+            </view>
+            <view class="ban-tx">
+                个人资料
+            </view>
+        </view>
+    </view>
+    <view class="ban-t" bindtap='showsjzx'>
+        <view class="ban-row">
+            <view class="ban-im">
+                <image src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/%E5%92%A8%E8%AF%A2.png?sign=473864a364c77964143fe875cdaf105c&t=1652281299"></image>
+            </view>
+            <view class="ban-tx">
+                商家咨询
+            </view>
+        </view>
+    </view>
+    <view class="ban-t" bindtap='shownmzr'>
+        <view class="ban-row">
+            <view class="ban-im">
+                <image src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/%E6%89%BE%E4%BA%BA.png?sign=0791a6089d39521930a462b6561a20a1&t=1652281491"></image>
+            </view>
+            <view class="ban-tx">
+                农忙招人
+            </view>
+        </view>
+    </view>
+    <view class="ban-t" bindtap='shownmzl'>
+        <view class="ban-row">
+            <view class="ban-im">
+                <image src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/%E5%86%9C%E6%9C%BA.png?sign=07a70f1a617f5897e12a757ce1d15849&t=1653046699"></image>
+            </view>
+            <view class="ban-tx">
+                农机租赁
+            </view>
+        </view>
+    </view>
+    <view class="ban-t" bindtap='showlxwm'>
+        <view class="ban-row ban-row0">
+            <view class="ban-im">
+                <image src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC%20(1).png?sign=eabc7e58ee627c3b0fb669f357188c5a&t=1653098183"></image>
+            </view>
+            <view class="ban-tx">
+                联系我们
+            </view>
+        </view>
+    </view>
+</view>

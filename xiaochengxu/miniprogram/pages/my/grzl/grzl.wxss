@@ -1,0 +1,75 @@
+.header{
+  width: 250rpx;
+  height: 250rpx;
+  margin: 20rpx auto;
+}
+.header image{
+  width: 250rpx;
+  height: 250rpx;
+}
+.body{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+}
+.body ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.body ul li {
+  position: relative;
+  width:80vw;
+  padding: 15rpx;
+  height:100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  font-size: 18px;
+  line-height: 100rpx;
+}
+.body-local{
+  margin: 20rpx 0;
+font-size: 18px;
+color: #333;
+}
+.bg1{
+  display: block!important;
+}
+.bg2{
+  display: none!important;
+}
+.phoneinput,.nameinput,.sexinput{
+  width: 50vw;
+  height: 70rpx;
+  line-height: 100rpx;
+  border: 1px solid #ddd;
+}
+.sexinput{
+  width: 5vh!important;
+}
+.user_local{
+position: absolute;
+right: 15rpx;
+top: 25rpx;
+background-color: skyblue;
+color: #fafafa;
+font-size: 15px;
+}
+.user_add{
+  justify-content: center!important;
+}
+.user_zhuce{
+  justify-content: space-around!important;
+}
+.user_post{
+  width: 25vw;
+  height:80rpx;
+  color:#fafafa;
+  font-size: 15px;
+  font-weight: 600;
+}

@@ -1,0 +1,18 @@
+<view class="box">
+<view class="header">
+<text>{{userInfo.nickName}}</text>
+<image src="{{userInfo.avatarUrl}}"></image>
+</view>
+<view class="body">
+<ul>
+  <li><text>姓名</text><text>{{username}}</text></li>
+  <li><text>地址</text><text>{{userlocal}}</text></li>
+  <li> <text>注册成为</text><text>{{status}}</text></li>
+</ul>
+</view>
+<view class="footer">
+<text>详细介绍</text>
+<textarea name="xiangxi" id="xiangxi" cols="30" rows="10" bindblur="mouseleave" ></textarea> 
+</view>
+<button class="submit" bindtap="submit">提交</button>
+</view>

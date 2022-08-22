@@ -1,0 +1,31 @@
+<view class="box">
+<view class="header">
+<text>{{userInfo.nickName}}</text>
+<image src="{{userInfo.avatarUrl}}"></image>
+</view>
+<view class="body">
+<ul>
+  <li><text>姓名</text><text>{{username}}</text></li>
+  <li><text>性别</text><text>{{usersex}}</text></li>
+  <li><text>地址</text><text>{{userlocal}}</text></li>
+  <li><text>农具类型</text><text bindtap='bindShowMsg' class="{{bg?'bg1':'bg2'}}">{{type}}</text></li>
+  <view class="selectbox_box" wx:if="{{select}}">
+    <view class="select_one" bindtap="mySelect" data-name="耕种机械">耕种机械</view>
+        <view class="select_one" bindtap="mySelect" data-name="整地机械">整地机械</view>
+        <view class="select_one" bindtap="mySelect" data-name="种植机械">种植机械</view>
+        <view class="select_one" bindtap="mySelect" data-name="收割机械">收割机械</view>
+        <view class="select_one" bindtap="mySelect" data-name="运输机械">运输机械</view>
+        <view class="select_one" bindtap="mySelect" data-name="农副产品加工机械">农副产品加工机械</view>
+        <view class="select_one" bindtap="mySelect" data-name="排灌机械">排灌机械</view>
+        <view class="select_one" bindtap="mySelect" data-name="其他机械">其他机械</view>
+  </view>
+  <li><text>注册</text><text>{{status}}</text></li>
+</ul>
+</view>
+<view class="footer">
+<text>详细介绍</text>
+<textarea name="xiangxi" id="xiangxi" cols="30" rows="10" bindblur="mouseleave" ></textarea> 
+</view>
+<button class="submit" bindtap="submit">提交</button>
+</view>
+

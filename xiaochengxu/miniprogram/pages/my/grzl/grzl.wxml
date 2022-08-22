@@ -1,0 +1,25 @@
+<view class ="container">
+<view class="header">
+<image src="{{userInfo.avatarUrl}}"></image>
+</view>
+<view class = "body">
+<ul>
+  <li><text>微信名称</text><text>{{userInfo.nickName}}</text> </li>
+  <li><text>性别</text><text bindtap="{{usersex}}" class="{{bg2?'bg1':'bg2'}}">{{gender}}</text>
+    <input type="text" bindblur="textsex" class="sexinput {{bg2?'bg2':'bg1'}}"/></li>
+  <li><text>姓名</text><text bindtap="{{username}}" class="{{bg1?'bg1':'bg2'}}">{{textname}}</text>
+  <input type="text" bindblur="textname" class="nameinput {{bg1?'bg2':'bg1'}}"/></li>
+  <li><text>联系方式</text><text  class="{{bg?'bg1':'bg2'}}" bindtap="{{userphone}}">{{textcont}}</text>
+  <input type="number" bindblur="textleave" class="phoneinput {{bg?'bg2':'bg1'}}"/></li>
+  <li><text>地址信息</text>
+  <button class="user_local" bindtap="getlocal">获取当前位置</button></li>
+  <li class="user_add"><text>{{local}}</text></li>
+<li class="user_zhuce" wx:if="{{userzc}}"><button class="user_post" type="warn" bindtap="sjzhuce">商家注册</button><button class="user_post" type="warn"bindtap="nmzhaoreng">农忙帮手</button>
+  <button class="user_post" type="warn"bindtap="zjzhuce">出租农具</button></li>
+  <li wx:if="{{!userzc}}">
+  <text>已注册身份</text><text>{{status}}</text>
+  </li>
+</ul>
+
+ </view>
+</view>

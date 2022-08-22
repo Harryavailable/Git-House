@@ -1,0 +1,25 @@
+<view class="box">
+<view class="top">
+<image class="img" src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/%E8%80%95%E7%A7%8D1.jpg?sign=95ad87a8cc5a4aa2ef271085c3f146e7&t=1652747106"></image>
+</view>
+<view class="nav">
+<ul>
+  <li><image class="img1" src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/676d8d4ee83fc6e8978c07b3da374c87.gif?sign=cf369ab28e42a036be46307ec0bc4125&t=1652330185"/></li> 
+
+  <li class="navigation"><navigator url="../vegetable/vegetables"><image  src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/%E5%86%9C%E4%BA%A7%E5%93%81.png?sign=5dc680bcee52d354adaafd2d81ef474a&t=1652747018"/>
+  <text>农产品</text></navigator></li>
+
+  <li><image  class="img1" src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/676d8d4ee83fc6e8978c07b3da374c87.gif?sign=6b24f38ee4d7c87f6635d78d855f3505&t=1652747046"/></li>
+
+  <li class="navigation"><navigator url="../fruit/fruit"><image  src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/%E6%B0%B4%E6%9E%9C%20(1).png?sign=f42d57718b5618863c8db7b5d613b5ac&t=1652341949"/><text>水果</text> </navigator></li>
+
+  <li class="navigation"><navigator url="../aquatic/aquatic"><image  src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/%E9%B1%BC%26%E6%B0%B4%E4%BA%A7.png?sign=a414756655a118e1ee02eef848e974a4&t=1652342044"/><text>水产</text> </navigator> </li>  <li class="navigation"><navigator url="../fertilizer/fertilizer"><image  src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/%E8%82%A5%E6%96%99.png?sign=8daad38a9811aa067e3de26029a0c59d&t=1653046255"/><text>农具肥料</text> </navigator></li>
+  <li><image class="img1" src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/676d8d4ee83fc6e8978c07b3da374c87.gif?sign=6b24f38ee4d7c87f6635d78d855f3505&t=1652747046"/></li> 
+<li class="navigation"><navigator url="../meat/meat"><image  src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/%E8%82%89%E7%B1%BB%E8%9B%8B.png?sign=579514f1624517d67c6db080c77a9f67&t=1652342026"/><text>肉蛋类</text> </navigator></li>  <li><image class="img1" src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/676d8d4ee83fc6e8978c07b3da374c87.gif?sign=6b24f38ee4d7c87f6635d78d855f3505&t=1652747046"/></li>   
+</ul>
+
+</view>
+</view>
+
+
+

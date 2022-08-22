@@ -1,0 +1,36 @@
+
+
+<view class="xpl"> 
+<scroll-view class = "nav_l " scroll-y="true">
+<ul>
+<li bindtap="shucai" class="{{value===0?'checked':''}}"data-value="{{0}}">氮肥</li>
+<li bindtap="shucai" class="{{value===1?'checked':''}}"data-value="{{1}}">磷肥</li>
+<li bindtap="shucai"class="{{value===2?'checked':''}}" data-value="{{2}}">复合肥</li>
+<li bindtap="shucai"class="{{value===3?'checked':''}}" data-value="{{3}}">钾肥</li>
+<li bindtap="shucai"class="{{value===4?'checked':''}}" data-value="{{4}}">水溶肥</li>
+<li bindtap="shucai"class="{{value===5?'checked':''}}" data-value="{{5}}">有机肥</li>
+<li bindtap="shucai"class="{{value===6?'checked':''}}" data-value="{{6}}">杀虫剂</li>
+<li bindtap="shucai"class="{{value===7?'checked':''}}" data-value="{{7}}">杀菌剂</li>
+<li bindtap="shucai"class="{{value===8?'checked':''}}" data-value="{{8}}">除草剂</li>
+<li bindtap="shucai"class="{{value===9?'checked':''}}" data-value="{{9}}">杀鼠剂</li>
+<li bindtap="shucai"class="{{value===10?'checked':''}}" data-value="{{10}}">生物农药</li>
+<li bindtap="shucai"class="{{value===11?'checked':''}}" data-value="{{11}}">喷雾剂</li>
+<li bindtap="shucai"class="{{value===12?'checked':''}}" data-value="{{12}}">手推车</li>
+<li bindtap="shucai"class="{{value===13?'checked':''}}" data-value="{{13}}">电子秤</li>
+<li bindtap="shucai"class="{{value===14?'checked':''}}" data-value="{{14}}">箩筐</li>
+<li bindtap="shucai"class="{{value===15?'checked':''}}" data-value="{{15}}">锄头</li>
+<li bindtap="shucai"class="{{value===16?'checked':''}}" data-value="{{16}}">铁锹</li>
+<li bindtap="shucai"class="{{value===17?'checked':''}}" data-value="{{17}}">铁耙</li>
+
+</ul>
+</scroll-view>
+<view class="nav_r"> 
+<view class="name"><h4>{{fertilizer[value].name}}</h4></view>
+<view class="add"><text>价格:</text><h4>{{fertilizer[value].price}}</h4></view><view class="add"><text>类型:</text> <h4>{{fertilizer[value].type}}</h4></view>
+<view class="add"><text>功效:</text> <h4 >{{fertilizer[value].effect}}</h4></view>
+
+<view wx:for="{{fertilizer[value].pic}}"wx:for-item="item" class="img"><image  src="{{item}}"></image></view>
+<view class="js">详细介绍</view>
+<view class="text"><h4>{{fertilizer[value].discribe}}</h4></view>
+</view>
+</view>

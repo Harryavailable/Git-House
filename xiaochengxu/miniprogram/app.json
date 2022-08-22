@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/fabu/fabu",
+    "pages/vegetable/vegetables",
+    "pages/my/my",
+    "pages/my/lxwm/lxwm",
+    "pages/my/wtfk/wtfk",
+    "pages/fruit/fruit",
+    "pages/meat/meat",
+    "pages/aquatic/aquatic",
+    "pages/fertilizer/fertilizer",
+    "pages/zixun/zixun",
+    "pages/my/grzl/grzl",
+    "pages/my/grzl/sjzhuce/sjzhuce",
+    "pages/my/grzl/nmzhaoreng/nmzhaoreng",
+    "pages/my/grzl/zjzhuce/zjzhuce",
+    "pages/nmzr/nmzr",
+    "pages/njzp/njzp"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "微信小程序请求获取您的位置信息"
+    }
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#cd9a5b",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "慧农家",
+    "backgroundColor": "#cd9a5b",
+    "backgroundTextStyle": "light"
+ },
+  "tabBar": {
+    "color": "#c0c0c0",
+    "selectedColor": "#000",
+    "backgroundColor": "#fafafa",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/fabu/fabu",
+        "text": "功能",
+        "iconPath": "/images/发布色块.png",
+        "selectedIconPath": "/images/发布.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/我的-fill.png",
+        "selectedIconPath": "/images/我的.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

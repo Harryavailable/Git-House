@@ -1,0 +1,35 @@
+
+<view class="xpl"> 
+<scroll-view class = "nav_l " scroll-y="true">
+<ul>
+<li bindtap="shucai" class="{{value===0?'checked':''}}"data-value="{{0}}">黑木耳</li>
+<li bindtap="shucai" class="{{value===1?'checked':''}}"data-value="{{1}}">甜玉米</li>
+<li bindtap="shucai"class="{{value===2?'checked':''}}" data-value="{{2}}">粉西红柿</li>
+<li bindtap="shucai"class="{{value===3?'checked':''}}" data-value="{{3}}">小米椒</li>
+<li bindtap="shucai"class="{{value===4?'checked':''}}" data-value="{{4}}">毛豆荚</li>
+<li bindtap="shucai"class="{{value===5?'checked':''}}" data-value="{{5}}">长豆角</li>
+<li bindtap="shucai"class="{{value===6?'checked':''}}" data-value="{{6}}">油麦菜</li>
+<li bindtap="shucai"class="{{value===7?'checked':''}}" data-value="{{7}}">黄心大白菜</li>
+<li bindtap="shucai"class="{{value===8?'checked':''}}" data-value="{{8}}">上海青</li>
+<li bindtap="shucai"class="{{value===9?'checked':''}}" data-value="{{9}}">圆叶窝笋</li>
+<li bindtap="shucai"class="{{value===10?'checked':''}}" data-value="{{10}}">香菇</li>
+<li bindtap="shucai"class="{{value===11?'checked':''}}" data-value="{{11}}">竹荪</li>
+<li bindtap="shucai"class="{{value===12?'checked':''}}" data-value="{{12}}">北虫草</li>
+<li bindtap="shucai"class="{{value===13?'checked':''}}" data-value="{{13}}">独头蒜</li>
+<li bindtap="shucai"class="{{value===14?'checked':''}}" data-value="{{14}}">密本南瓜</li>
+<li bindtap="shucai"class="{{value===15?'checked':''}}" data-value="{{15}}">黑皮冬瓜</li>
+<li bindtap="shucai"class="{{value===16?'checked':''}}" data-value="{{16}}">密刺黄瓜</li>
+<li bindtap="shucai"class="{{value===17?'checked':''}}" data-value="{{17}}">西葫芦</li>
+<li bindtap="shucai"class="{{value===18?'checked':''}}" data-value="{{18}}">鲜百合</li>
+<li bindtap="shucai"class="{{value===19?'checked':''}}" data-value="{{19}}">圆包菜</li>
+</ul>
+</scroll-view>
+<view class="nav_r"> 
+<view class="name"><h4>{{vegetables[value].name}}</h4></view>
+<view class="add"><text>价格/元:</text><h4>{{vegetables[value].price}}</h4></view><view class="add"><text>农作物长度:</text> <h4 >{{vegetables[value].length}}</h4></view><view class="add"><text>生产商联系方式:</text> <h4>{{vegetables[value].tel}}</h4></view>
+<view class="add"><text>产地:</text> <h4>{{vegetables[value].address}}</h4></view>
+<view wx:for="{{vegetables[value].picture}}"wx:for-item="item" class="img"><image  src="{{item}}"></image></view>
+<view class="js">农产品介绍</view>
+<view class="text"><h4>{{vegetables[value].description}}</h4></view>
+</view>
+</view>

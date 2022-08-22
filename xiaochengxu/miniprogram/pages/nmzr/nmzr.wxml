@@ -1,0 +1,21 @@
+<view class="load" wx:if="{{!flage}}">
+<image src="https://636c-cloud1-1g68zuok4f972040-1308408565.tcb.qcloud.la/%E6%A0%A1%E5%9B%AD%E5%85%BC%E8%81%8C/%E6%9A%82%E6%97%A0%E4%BF%A1%E6%81%AF%E6%95%B0%E6%8D%AE-%E7%BC%BA%E7%9C%81%E9%A1%B5.png?sign=54492bd81e57ea70a7fae346a85265de&t=1653096680"></image>
+  <button bindtap="hiden">请登录</button>
+</view>
+<view class="bigbox" wx:if="{{flage}}" wx:for="{{nmzr}}" wx:for-item="item">
+<view class="card">
+<ul>
+  <li><text class="txt1 txt11">姓名:<text class="txt2">{{item.name}}</text></text>
+  <text class="txt1">性别：<text class="txt2">{{item.sex}}</text></text></li>
+  <li><text class="txt1 txt12">年龄:<text class="txt2">{{item.age}}</text></text>
+  <text class="txt1">联系方式:<text class="txt2">{{item.phone}}</text></text>
+  </li>
+  <li>
+  <text class="txt1"> 地址：<text class="txt2">{{item.add}}</text></text>
+  </li>
+<li><text class="txt1">详细信息:<text class="txt2">{{item.describe}}</text></text></li>
+</ul>
+<view>
+</view>
+</view>
+</view>

@@ -1,0 +1,36 @@
+<view class="xpl"> 
+<scroll-view class = "nav_l " scroll-y="true">
+<ul>
+  <li bindtap="shucai" class="{{value===0?'checked':''}}"data-value="{{0}}">香猪肉</li>
+<li bindtap="shucai" class="{{value===1?'checked':''}}"data-value="{{1}}">乳牛脊骨</li>
+<li bindtap="shucai"class="{{value===2?'checked':''}}" data-value="{{2}}">羊肚</li>
+<li bindtap="shucai"class="{{value===3?'checked':''}}" data-value="{{3}}">羊肉</li>
+<li bindtap="shucai"class="{{value===4?'checked':''}}" data-value="{{4}}">牛肉</li>
+<li bindtap="shucai"class="{{value===5?'checked':''}}" data-value="{{5}}">兔肉</li>
+<li bindtap="shucai"class="{{value===6?'checked':''}}" data-value="{{6}}">牛五花</li>
+<li bindtap="shucai"class="{{value===7?'checked':''}}" data-value="{{7}}">牛肚</li>
+<li bindtap="shucai"class="{{value===8?'checked':''}}" data-value="{{8}}">烤鸭</li>
+<li bindtap="shucai"class="{{value===9?'checked':''}}" data-value="{{9}}">腊肉</li>
+<li bindtap="shucai"class="{{value===10?'checked':''}}" data-value="{{10}}">鸭蛋</li>
+<li bindtap="shucai"class="{{value===11?'checked':''}}" data-value="{{11}}">土鸡蛋</li>
+<li bindtap="shucai"class="{{value===12?'checked':''}}" data-value="{{12}}">黄牛肉</li>
+<li bindtap="shucai"class="{{value===13?'checked':''}}" data-value="{{13}}">杂交兔肉</li>
+<li bindtap="shucai"class="{{value===14?'checked':''}}" data-value="{{14}}">芦花鸡肉</li>
+<li bindtap="shucai"class="{{value===15?'checked':''}}" data-value="{{15}}">鹌鹑蛋</li>
+<li bindtap="shucai"class="{{value===16?'checked':''}}" data-value="{{16}}">皮蛋</li>
+<li bindtap="shucai"class="{{value===17?'checked':''}}" data-value="{{17}}">羊蝎子</li>
+<li bindtap="shucai"class="{{value===18?'checked':''}}" data-value="{{18}}">牛肠</li>
+</ul>
+</scroll-view>
+<view class="nav_r"> 
+<view class="name"><h4>{{meat[value].name}}</h4></view>
+<view class="add"><text>价格/元:</text><h4>{{meat[value].price}}</h4></view>
+<view class="add"><text>肉类型：</text> <h4 >{{meat[value].type}}</h4></view>
+<view class="add"><text>所取部位：</text> <h4 >{{meat[value].part}}</h4></view>
+<view class="add"><text>生产商联系方式:</text> <h4>{{meat[value].tel}}</h4></view>
+<view class="add"><text>产地:</text> <h4>{{meat[value].address}}</h4></view>
+<view wx:for="{{meat[value].picture}}"wx:for-item="item" class="img"><image  src="{{item}}"></image></view>
+<view class="js">肉类介绍</view>
+<view class="text"><h4>{{meat[value].description}}</h4></view>
+</view>
+</view>

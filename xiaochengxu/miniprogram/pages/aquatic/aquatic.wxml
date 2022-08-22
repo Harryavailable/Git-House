@@ -1,0 +1,31 @@
+
+<view class="xpl"> 
+<scroll-view class = "nav_l " scroll-y="true">
+<ul>
+  <li bindtap="shucai" class="{{value===0?'checked':''}}"data-value="{{0}}">花甲</li>
+<li bindtap="shucai" class="{{value===1?'checked':''}}"data-value="{{1}}">青虾</li>
+<li bindtap="shucai"class="{{value===2?'checked':''}}" data-value="{{2}}">小龙虾</li>
+<li bindtap="shucai"class="{{value===3?'checked':''}}" data-value="{{3}}">白鲳鱼</li>
+<li bindtap="shucai"class="{{value===4?'checked':''}}" data-value="{{4}}">鲤鱼</li>
+<li bindtap="shucai"class="{{value===5?'checked':''}}" data-value="{{5}}">生蚝</li>
+<li bindtap="shucai"class="{{value===6?'checked':''}}" data-value="{{6}}">田螺</li>
+<li bindtap="shucai"class="{{value===7?'checked':''}}" data-value="{{7}}">大闸蟹</li>
+<li bindtap="shucai"class="{{value===8?'checked':''}}" data-value="{{8}}">红蟹</li>
+<li bindtap="shucai"class="{{value===9?'checked':''}}" data-value="{{9}}">青鱼</li>
+<li bindtap="shucai"class="{{value===10?'checked':''}}" data-value="{{10}}">白鲢鱼</li>
+<li bindtap="shucai"class="{{value===11?'checked':''}}" data-value="{{11}}">乌鳢</li>
+<li bindtap="shucai"class="{{value===12?'checked':''}}" data-value="{{12}}">全壳青口</li>
+<li bindtap="shucai"class="{{value===13?'checked':''}}" data-value="{{13}}">香螺</li>
+<li bindtap="shucai"class="{{value===14?'checked':''}}" data-value="{{14}}">红螺</li>
+<li bindtap="shucai"class="{{value===15?'checked':''}}" data-value="{{15}}">江瑶贝</li>
+</ul>
+</scroll-view>
+<view class="nav_r"> 
+<view class="name"><h4>{{seafood[value].name}}</h4></view>
+<view class="add"><text>价格/元:</text><h4>{{seafood[value].price}}</h4></view><view class="add"><text>生长环境:</text> <h4 >{{seafood[value].environment}}</h4></view><view class="add"><text>生产商联系方式:</text> <h4>{{seafood[value].tel}}</h4></view>
+<view class="add"><text>产地:</text> <h4>{{seafood[value].address}}</h4></view>
+<view wx:for="{{seafood[value].picture}}"wx:for-item="item" class="img"><image  src="{{item}}"></image></view>
+<view class="js">水产品介绍</view>
+<view class="text"><h4>{{seafood[value].description}}</h4></view>
+</view>
+</view>

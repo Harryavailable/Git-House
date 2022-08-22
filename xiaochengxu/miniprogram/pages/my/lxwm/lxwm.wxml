@@ -1,0 +1,8 @@
+<swiper indicator-color="#ccc"indicator-active-color="#999" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"> 
+    <block wx:for="{{pic}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+<button open-type="contact" bindcontact="handleContact" type="warn">联系我们</button>
