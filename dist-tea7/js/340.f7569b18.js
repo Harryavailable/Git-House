@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkvue_tea"]=self["webpackChunkvue_tea"]||[]).push([[340],{7340:function(e,u,n){n.r(u),n.d(u,{default:function(){return f}});var t=function(){var e=this,u=e._self._c;return u("div",[u("router-view")],1)},r=[],a={name:"search-vue"},s=a,c=n(1001),l=(0,c.Z)(s,t,r,!1,null,"02a44e6a",null),f=l.exports}}]);
+//# sourceMappingURL=340.f7569b18.js.map
